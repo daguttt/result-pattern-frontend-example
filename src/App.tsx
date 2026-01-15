@@ -2,7 +2,7 @@ import { CategoriesField } from '@modules/categories/categories-field.component'
 
 function App() {
   return (
-    <main className="p-4 container mx-auto w-lg">
+    <main className="p-4 container mx-auto w-lg space-y-6">
       <h1 className="text-4xl">Result Pattern Example</h1>
       <CategoriesField />
     </main>

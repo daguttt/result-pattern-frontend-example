@@ -53,10 +53,12 @@ export function CategoriesField() {
   if (isError) return <ApiErrorDisplayer error={error} />;
 
   return (
-    <label htmlFor="categoryCode">
+    <div className="w-full">
+      <label className="text-medium">Categoría</label>
       <Select
         isDisabled={isPending}
         options={categoryOptions}
+        placeholder="Selecciona una categoría"
         styles={{
           control: (baseStyles) => ({
             ...baseStyles,
@@ -65,6 +67,6 @@ export function CategoriesField() {
           }),
         }}
       />
-    </label>
+    </div>
   );
 }
